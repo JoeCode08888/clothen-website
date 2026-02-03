@@ -1,0 +1,18 @@
+/* carousel.css - 輪播圖 */
+
+/* 輪播圖外距 */
+.carousel {
+    padding: 20px;
+}
+
+/* 所有輪播圖片預設隱藏 */
+.carousel > img {
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+
+/* 目前顯示的輪播圖片 */
+.carousel > img.active {
+    display: block;
+}

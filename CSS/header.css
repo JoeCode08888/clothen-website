@@ -1,0 +1,99 @@
+/* header.css - 頁首 */
+
+/* 整個 header 區塊 */
+.mainHeader {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(226, 206, 197);
+    z-index: 1000;
+}
+
+/* 左側 logo 區塊 */
+.headerLeft {
+    height: 80px;
+    margin-left: 19%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: rgb(17, 83, 95);
+    cursor: pointer;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 中間導航按鈕區 */
+.headerCenter {
+    gap: 80px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* WOMEN / MEN / KIDS 按鈕 */
+#women, #men, #kids {
+    font-size: 15px;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(17, 83, 95);
+    border-radius: 5px;
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 右側區域：搜尋 / 購物車 / 登入 */
+.headerRight {
+    gap: 10px;
+    margin-right: 18%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+}
+
+/* 搜尋框容器 */
+#search {
+    align-items: center;
+}
+
+/* 搜尋輸入框 */
+#searchBox {
+    width: 100px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    border: 2px solid rgb(26, 118, 161);
+}
+
+/* 右側按鈕共用樣式（搜尋 / 購物車 / 登入） */
+#searchBtn, #shopping, #login {
+    font-size: 15px;
+    border: 0;
+    padding: 5px 10px;
+    color: rgb(17, 83, 95);
+    border-radius: 5px;
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 滑鼠經過樣式 */
+.headerLeft:hover,
+#women:hover, #men:hover, #kids:hover,
+#searchBtn:hover, #shopping:hover, #login:hover {
+    background-color: rgb(218, 157, 129);
+}
+
+/* 點擊按鈕縮小效果 */
+.headerLeft:active,
+#women:active, #men:active, #kids:active,
+#searchBtn:active, #shopping:active, #login:active {
+    transform: scale(0.9);
+    color: rgb(207, 169, 125);
+}

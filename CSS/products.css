@@ -1,0 +1,87 @@
+/* products.css - 商品列表 */
+
+/* 商品列表容器 */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 267px);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* 單一商品卡片 */
+.article {
+    border-radius: 10px;
+    background-color: rgb(235, 218, 210);
+    cursor: pointer;
+}
+
+/* 商品圖片 */
+.productImage {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* 顏色容器 */
+.colorPalette {
+    gap: 5px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 單一顏色樣式 */
+.colorDot {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(39, 11, 61);
+    cursor: pointer;
+}
+
+/* 滑鼠經過樣式 */
+.article:hover .productImage {
+    transform: scale(1.1);
+}
+
+/* 商品顏色文字 */
+.color>p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+    color: rgb(39, 11, 61);
+}
+
+/* 商品名稱文字 */
+.product>p {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: rgb(39, 11, 61);
+}
+
+/* 商品價格 */
+.price {
+    font-size: 16px;
+    margin: 2px 0 5px 0;
+    text-align: center;
+    color: rgb(39, 11, 61);
+}
+
+/* 商品原價文字 */
+.original {
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgb(39, 11, 61);
+    text-decoration: line-through;
+}
+
+/* 商品折扣價 */
+.discount {
+    font-weight: bold;
+    color: rgb(211, 42, 42);
+}

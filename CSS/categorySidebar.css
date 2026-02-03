@@ -1,0 +1,72 @@
+/* categorySidebar.css - 側邊欄 */
+
+/* 側邊欄主容器 */
+#categorySidebar {
+    bottom: 0px;
+    left: 0;
+    margin: 0;
+    color: rgb(39, 11, 61);
+    z-index: 9999;
+    position: fixed;
+    border: 1px solid rgb(168, 164, 164);
+    background-color: rgb(236, 221, 206);
+    width: 10%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 100%;
+    max-height: 1280px;
+    overflow: auto;
+}
+
+/* 主分類標題 */
+.mainCategory{
+    width: 100%;
+    font-size: 18px;
+    padding: 28.5px 0;
+    text-align: center;
+}
+
+/* 子分類標題 */
+.categoryTitle{
+    width: 100%;
+    font-size: 14px;
+    padding: 15px 30px 8px 30px;
+}
+
+/* 子分類列表容器 */
+.categoryList{
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+/* 單一子分類項目 */
+.categoryItem{
+    width: 130px;
+    padding: 3px 10px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* 在項目前加上 > 符號 */
+.categoryItem::before{
+    font-size: 8px;
+    content: ">";
+    padding-right: 10px;
+    margin-right: 2px;
+}
+
+/* 滑鼠經過樣式 */
+.categoryItem:hover{
+    border-radius: 5px;
+    background-color: rgb(202, 184, 165);
+}
+
+/* 點擊按鈕縮小效果 */
+.categoryItem:active {
+    transform: scale(0.9);
+    color: rgb(207, 169, 125);
+}

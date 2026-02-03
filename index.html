@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clothen</title>
+    <link rel="icon" href="./img/Clothen.jpg">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/carousel.css">
+    <link rel="stylesheet" href="./CSS/products.css">
+    <link rel="stylesheet" href="./CSS/utility.css">
+    <link rel="stylesheet" href="./CSS/shoppingCart.css">
+    <link rel="stylesheet" href="./CSS/categorySidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./JavaScript/products.js" defer></script>
+    <script src="./JavaScript/carouselAndSeason.js" defer></script>
+    <script src="./JavaScript/categorySidebar.js" defer></script>
+    <script src="./JavaScript/about.js" defer></script>
+    <script src="./JavaScript/csReturnFlow.js" defer></script>
+    <script src="./JavaScript/userFeedback.js" defer></script>
+    <script src="./JavaScript/buttons.js" defer></script>
+    <script src="./JavaScript/cart.js" defer></script>
+    <script src="./JavaScript/main.js" defer></script>
+</head>
+
+<body>
+    <header class="mainHeader">
+        <!-- <div class="headerLeft">
+                <button id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div> -->
+
+        <div class="headerLeft">
+            <h1>Clothen</h1>
+        </div>
+
+        <div class="headerCenter">
+            <button id="women">WOMEN</button>
+            <button id="men">MEN</button>
+            <button id="kids">KIDS</button>
+        </div>
+
+        <div class="headerRight">
+            <div id="search">
+                <input type="text" placeholder="請輸入關鍵字" id="searchBox">
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    搜尋
+                </button>
+            </div>
+            <button id="shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+                購物車
+            </button>
+            <button id="login">
+                <i class="fa-solid fa-user"></i>
+                登入/註冊
+            </button>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <hr>
+        <section class="carousel">
+            <img class="active" src="./img/carousel01.jpg" alt="carousel">
+            <img src="./img/carousel02.jpg" alt="carousel">
+            <img src="./img/carousel03.jpg" alt="carousel">
+            <img src="./img/carousel04.jpg" alt="carousel">
+            <img src="./img/carousel05.jpg" alt="carousel">
+        </section>
+        <hr>
+
+        <section class="products">
+        </section>
+        <hr>
+
+        <ul class="productList">
+        </ul>
+        <hr>
+
+        <div>
+            <p class="top">
+                <button>TOP</button>
+            </p>
+        </div>
+    </main>
+
+    <div id="sidebarContainer">
+    </div>
+
+    <div id="basketSection">
+        <header id="cartHeader">
+            <h3>購物車</h3>
+            <hr>
+        </header>
+        <main id="cartContent">
+
+        </main>
+        <footer id="cartFooter">
+            <hr>
+            <div class="checkoutBar">
+                <div class="selectAll">
+                    <input type="checkbox">
+                    <span>全選</span>
+                </div>
+                <div class="cartMoney">
+                    <span>小計</span>
+                    <span class="nt">NT$</span>
+                    <span class="money">0</span>
+                </div>
+                <button class="checkout">結帳</button>
+            </div>
+        </footer>
+    </div>
+
+    <footer id="mainFooter">
+        <div id="service">
+            <div id="serviceActions">
+                <button id="aboutBtn">關 於 Clothen</button>
+                <button id="returnFlowBtn">線 上 退 換 貨</button>
+                <button id="feedbackBtn">意 見 回 饋</button>
+            </div>
+            <div id="socialMedia">
+                <button id="fbBtn">
+                    <img src="./img/facebook.png" alt="facebook">
+                </button>
+                <button id="igBtn">
+                    <img src="./img/instagram.png" alt="instagram">
+                </button>
+                <button id="lineBtn">
+                    <img src="./img/line.png" alt="line">
+                </button>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

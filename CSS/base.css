@@ -1,0 +1,48 @@
+/* base.css - 全站共用基本樣式 */
+
+/* 選擇所有元素，重置 margin、padding，並設定 box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 春夏背景 */
+body.springSummer {
+    background-image: url("../img/pcSpringSummerBackground.jpg");
+}
+
+/* 秋冬背景 */
+body.autumnWinter {
+    background-image: url("../img/pcAutumnWinterBackground.jpg");
+}
+
+/* body 全站背景與字型設定 */
+body {
+    /* background-image: url("../img/callSpringSummerBackground.jpg"); */
+    /* background-image: url("../img/callAutumnWinterBackground.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;     /* header -> main -> footer */
+    display: flex;              /* 改成 flex 直向布局 */
+}
+
+/* main 區塊最大寬度與置中設定 */
+#mainContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 15px 0 15px; /* 上方留給固定 header */
+    padding-top: 100px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    flex: 1; /* 關鍵，撐滿 header 與 footer 之間 */
+}
+
+/* 全站 a 與 button 共用樣式 */
+a, button {
+    font-family: inherit;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+<!-- userFeedback.html - 意見回饋表單 -->
+
+<div class="ufFeedbackContainer">
+    <h2>意見回饋表單</h2>
+    <form id="ufFeedbackForm">
+        <label>姓名 *</label>
+        <input type="text" id="ufName" required>
+
+        <label>電話 *</label>
+        <input type="tel" id="ufPhone" required>
+
+        <label>Email *</label>
+        <input type="email" id="ufEmail" placeholder="example@mail.com" required>
+
+        <label>意見類別 *</label>
+        <select id="ufCategory" required>
+            <option value="">請選擇類別</option>
+            <option>商品問題</option>
+            <option>訂單 / 配送問題</option>
+            <option>購物體驗</option>
+            <option>建議改進</option>
+            <option>其他</option>
+        </select>
+
+        <label>您購買的商品 *</label>
+        <select id="ufProduct" required>
+            <option value="">請選擇商品</option>
+        </select>
+
+        <label>問題描述 *</label>
+        <textarea id="ufMessage" required></textarea>
+
+        <div class="ufButtonWrapper">
+            <button type="submit">送出</button>
+        </div>
+    </form>
+
+    <p id="ufSuccessMsg" class="hidden">✅ 提交成功，感謝您的回饋！</p>
+</div>

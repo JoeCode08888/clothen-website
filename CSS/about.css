@@ -1,0 +1,41 @@
+/* about.css - Clothen 品牌介紹 */
+
+/* #about 設置關於 about 區塊*/
+#about {
+    width: 100%;
+    min-width: 1170px;
+    padding: 30px 100px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(95, 56, 20);
+    box-sizing: border-box;
+}
+
+/* #about h3 設置 Clothen 標題 */
+#about h3 {
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+/* #about h4 設置子標題 */
+#about h4 {
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* #about p 設置段落文字 */
+#about p {
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+/* #about pre 設置預格式化文本 */
+#about pre {
+    font-size: 15px;
+}
+
+/* #about li 設置列表項目 */
+#about li {
+    margin-left: 40px;
+    font-size: 15px;
+}

@@ -1,0 +1,145 @@
+/* shoppingCart.css - 購物車樣式 */
+
+/* 購物車整體容器 */
+#basketSection {
+    display: none;
+    bottom: 0px;
+    right: 0;
+    margin: 0;
+    color: rgb(39, 11, 61);
+    z-index: 9999;
+    position: fixed;
+    border: 1px solid rgb(168, 164, 164);
+    width: 20%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 91.2%;
+    max-height: 1280px;
+    overflow: auto;
+}
+
+/* 購物車 header、內容、footer 共用寬度 100% */
+#cartHeader,
+#cartContent,
+#cartFoote {
+    width: 100%;
+}
+
+/* 購物車 header */
+#cartHeader {
+    font-size: 18px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgb(226, 214, 204);
+}
+
+/* header 中的 h3 標題 */
+#cartHeader h3 {
+    padding-bottom: 25px;
+}
+
+/* 購物車內容區 */
+#cartContent {
+    height: 71.7%;
+    background-color: rgb(226, 214, 204);
+    overflow: auto;
+}
+
+/* 購物車 footer */
+#cartFooter {
+    padding: 30px 0;
+    background-color: rgb(226, 214, 204);
+}
+
+/* 結帳區塊 */
+.checkoutBar {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 0 25px;
+    padding-top: 25px;
+}
+
+/* 全選區塊 checkbox */
+.selectAll input {
+    transform: scale(1.5);
+    margin-right: 4px;
+}
+
+/* 全選區塊文字 */
+.selectAll span {
+    font-size: 12px;
+}
+
+/* 購物車金額區 */
+.cartMoney .nt {
+    font-size: 12px;
+    padding-right: 20px;
+}
+
+/* 購物車金額區塊的數字 */
+.cartMoney .money {
+    font-size: 18px;
+}
+
+/* 結帳按鈕 */
+.checkout {
+    font-size: 16px;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+/* 單一商品區塊 */
+.cartItem {
+    display: flex;
+    padding: 0 5px 0 10px;
+    column-gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 商品勾選框 */
+.cartItem input {
+    transform: scale(1.5);
+}
+
+/* 商品圖片 */
+.cartImg {
+    width: 100px;
+    border-radius: 6px;
+    border: 1px solid rgb(168, 164, 164);
+}
+
+/* 商品資訊區塊 */
+.cartInfo {
+    padding: 5px 0 0 0;
+}
+
+/* 商品資訊文字 */
+.cartInfo>p {
+    font-size: 14px;
+}
+
+.removeItem {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 164, 164);
+    margin-left: auto;
+}
+
+.removeItem>i {
+    transition: all 0.2s ease;
+}
+
+.removeItem:hover>i {
+    color: #c0392b;
+    transform: scale(1.1);
+}
+
+.cartSubtotal {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+}

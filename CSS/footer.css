@@ -1,0 +1,60 @@
+/* footer.css - 頁尾 */
+
+/* footer 主容器 */
+#mainFooter {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(226, 206, 197);
+    flex-shrink: 0; /* 重要，讓 footer 不會被壓縮 */
+}
+
+/* footer 內部服務區域 */
+#service {
+    max-width: 1200px;
+    padding-left: 19%;
+    padding-right: 18%;
+    padding: 0 60px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* footer 按鈕樣式 */
+#mainFooter > #service > #serviceActions > button {
+    padding: 5px 10px;
+    margin: 0 80px;
+    border-radius: 5px;
+    color: rgb(39, 11, 61);
+    border: 1px solid rgb(39, 11, 61);
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* 滑鼠經過樣式 */
+#mainFooter > #service > #serviceActions > button:hover {
+    background-color: rgb(218, 157, 129);
+}
+
+/* Facebook、Instagram、Line 按鈕特定樣式 */
+#fbBtn, #igBtn, #lineBtn{
+    border: none;
+    margin: 10px 15px;
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 設定 Facebook、Instagram、Line 圖像大小 */
+#fbBtn > img, #igBtn > img, #lineBtn > img{
+    height: 40px;
+}
+
+/* 點擊按鈕縮小效果 */
+#mainFooter > #service > #serviceActions > button:active,
+#fbBtn:active, #igBtn:active, #lineBtn:active {
+    transform: scale(0.9);
+    color: rgb(207, 169, 125);
+}

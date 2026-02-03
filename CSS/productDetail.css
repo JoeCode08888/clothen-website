@@ -1,0 +1,167 @@
+/* productDetail.css - 商品詳細頁面 */
+
+/* 商品詳細頁面最外層容器，水平排列圖片與資訊 */
+.productDetails {
+    width: 100%;
+    height: 750px;
+    gap: 10px;
+    padding: 70px 50px;
+    display: flex;
+}
+
+/* 商品圖片區塊 */
+.productImages{
+    height: 50%;
+    width: 50%;
+}
+
+/* 商品圖片本身 */
+.productImages > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 商品資訊區塊 */
+.productInfo {
+    width: 50%;
+    height: 535px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(39, 11, 61);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 商品名稱文字 */
+.productName {
+    font-size: 20px;
+    height: 80px;
+    width: 100%;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(39, 11, 61);
+}
+
+/* 商品顏色、尺寸、價格文字 */
+.productColor, .productSize, .productPrice {
+    font-size: 18px;
+    width: 100%;
+    margin: 10px 0;
+    color: rgb(39, 11, 61);
+}
+
+/* 顏色與尺寸選項列表 */
+.pdColor, .pdSize {
+    width: 100%;
+    padding: 0;
+    gap: 10px;
+    margin: 8px 0;
+    display: flex;
+    list-style: none;
+}
+
+/* 顏色選項按鈕 */
+.pdColor .colorDot {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 尺寸按鈕 */
+.pdSize > li > button {
+    font-size: 14px;
+    height: 45px;
+    width: 50px;
+    border-radius: 5px;
+    color: rgb(39, 11, 61);
+    border: 1px solid rgb(39, 11, 61);
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+/* 尺寸按鈕被選中時  */
+.pdColor > .colorDot.selected,
+.pdSize > li > button.selected {
+    background-color: rgb(240, 222, 195);
+    border: 2px solid rgb(255, 174, 0);
+}
+
+/* 價格區塊 */
+.pdPrice {
+    font-size: 30px;
+    height: 65px;
+    gap: 20px;
+    margin: 0 50px 40px 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    color: rgb(39, 11, 61);
+}
+
+/* 原價文字 */
+.pdPrice>.original{
+    font-size: 20px;
+}
+
+/* 加入購物車與數量調整容器 */
+#cartContainer {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    margin-top: auto;
+}
+
+/* 數量增減按鈕 */
+#cartContainer > .calculator .quantityBtn {
+    font-size: 25px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: rgb(39, 11, 61);
+    border: 1px solid rgb(39, 11, 61);
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* 數量輸入欄 */
+#cartContainer > .calculator > #quantity {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* 加入購物車按鈕 */
+#cartContainer > .addToCart {
+    font-size: 18px;
+    margin-top: auto;
+    padding: 10px 90px;
+    border-radius: 5px;
+    color: rgb(39, 11, 61);
+    border: 1px solid rgb(39, 11, 61);
+    background-color: transparent;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+/* 滑鼠經過樣式 */
+#cartContainer > .addToCart:hover,
+#cartContainer > .calculator > .quantityBtn:hover,
+.pdSize > li > button:hover {
+    background-color: rgb(240, 222, 195);
+}
+
+/* 點擊按鈕縮小效果 */
+#cartContainer > .addToCart:active,
+#cartContainer > .calculator > .quantityBtn:active,
+.pdColor > .colorDot:active,
+.pdSize > li > button:active {
+    transform: scale(0.9);
+    color: rgb(207, 169, 125);
+}
