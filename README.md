@@ -22,16 +22,18 @@ Clothen 是一個模擬前端服飾電商網站，提供商品瀏覽、分類、
   - 社群連結（Facebook / Instagram / Line）
 
 ## 專案結構
+```
 Clothen/
-│-- CSS/                 # 樣式檔案
-│-- JavaScript/          # 功能模組
-│-- img/                 # 圖片資源
-│-- index.html           # 首頁
-│-- about.html           # 關於我們頁面
-│-- categorySidebar*.html# 商品分類頁
+│-- CSS/                  # 樣式檔案
+│-- JavaScript/           # 功能模組
+│-- img/                  # 圖片資源
+│-- index.html            # 首頁
+│-- about.html            # 關於我們頁面
+│-- categorySidebar*.html # 商品分類頁
 │-- csReturnFlow.html     # 線上退換貨頁面
-│-- line.html            # Line 連結頁面
-│-- userFeedback.html    # 使用者回饋頁面
+│-- line.html             # Line 連結頁面
+│-- userFeedback.html     # 使用者回饋頁面
+```
 
 ## 技術堆疊
 - HTML5
